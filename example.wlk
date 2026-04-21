@@ -7,3 +7,17 @@ object pepita {
     energy = energy - minutes * 3
   }
 }
+
+object tenis {
+  method costo() = 200
+  
+}
+
+
+
+
+
+
+object hockey {
+  
+}
