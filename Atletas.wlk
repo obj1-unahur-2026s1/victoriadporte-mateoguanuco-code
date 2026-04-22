@@ -1,5 +1,6 @@
 import Deportes.*
 import Elementos.*
+import comiteOlimpico.*
 
 
 
@@ -26,14 +27,14 @@ object victoria {
     var cantidadDeEntrenadores = 4
     var disiplina = tenis
     var altura = 1.60
-    var edad = 25
+    var edad = 22
     
     method presupuesto() {
         return disiplina.presupuestoBase() + self.presupuestoPropio() + elemento.valor(self)
       
     }
   method presupuestoPropio() {
-    return cantidadDeEntrenadores * comiteOlimpitico.costoPorEntrenador()
+    return cantidadDeEntrenadores * comiteOlimpico
   }
 
   method cambiarElemento(nuevoElemento){

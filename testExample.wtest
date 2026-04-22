@@ -1,9 +1,61 @@
-import example.pepita
+import example.*
+import Deportes.*
+import Elementos.*
+import Atletas.*
+import comiteOlimpico.*
 
-describe "group of tests for pepita" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+
+describe "probamos que disciplinas nos saben decir" {
+
+  test "tenis al inicio vale 215" {
+    assert.equals(215, tenis.presupuestoBase())
   }
 
 }
+
+  describe "ahora tiene 10 hinchas, su presupuesto pasa a ser 230" {
+  test "ahora tiene 10 hinchas, su presupuesto pasa a ser 230"{
+    assert.equals(230, tenis.presupuestoBase())
+  }
+  }
+
+
+
+
+/*
+  describe "name" {
+    test "description" {
+      
+    }
+  }
+*/
+
+
+
+  describe "verificar qie ñps esvenatios de presupuesto" {
+    test "el presupuesto propio de victoria al inicio es de " {
+      assert.equals(40, victoria.presupuestoPropio())
+      
+    }
+  }
+
+
+
+
+
+  describe "quiere parecerse a delpo " {
+    
+    test "victoria ahora se parece quiere parecer a delpo" {
+
+      victoria.altura(210)
+      victoria.deporte(tenis)
+      victoria.cambiarElemento(raqueta)
+      victoria.cantidadDeEntrenadores(2)
+      assert.equals(20+215+2200, victoria.presupuestoTotal())
+
+    }
+  }
+
+
+
